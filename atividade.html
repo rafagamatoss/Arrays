@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*[JS-A05]Crie um programa que receba uma lista de números inteiros e retorne o valor máximo e mínimo dessa lista. Para isso, você deve utilizar um array e a função Math para encontrar o valor máximo e mínimo.*/
+
+      let lista = [1, 2, 2, -8, 0, 5, 8, 99];
+
+      function retornaMaiorMenor(listaNumeros) {
+        const maior = Math.max(...listaNumeros);
+        const menor = Math.min(...listaNumeros);
+
+        return { min: menor, max: maior };
+      }
+
+      const result = retornaMaiorMenor(lista);
+
+      console.log("Maior: " + result.max);
+      console.log("Menor: " + result.min);
+    </script>
+  </body>
+</html>
